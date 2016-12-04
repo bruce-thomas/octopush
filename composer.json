@@ -1,0 +1,41 @@
+{
+    "name": "laravel-notification-channels/octopush",
+    "description": "Laravel notifications for Octopush SMS",
+    "homepage": "https://github.com/laravel-notification-channels/octopush-sms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruce Thomas",
+            "email": "brucethomas.fr@gmail.com",
+            "homepage": "http://bruce-thomas.github.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/notifications": "^5.3",
+        "illuminate/support": "^5.1|^5.2|^5.3",
+        "illuminate/queue": "^5.1|^5.2|^5.3",
+        "octopush/sms-api": "dev-master"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Octopush\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Octopush\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
