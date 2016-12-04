@@ -20,6 +20,9 @@ class OctopushClient extends OctopushApiClient
         if (isset($config['sms_text'])) {
             $this->setSmsText($config['sms_text']);
         }
+        if (isset($config['sms_type'])) {
+            $this->setSmsType($config['sms_type']);
+        }
         if (isset($config['sms_sender'])) {
             $this->setSmsSender($config['sms_sender']);
         }
