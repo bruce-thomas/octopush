@@ -44,8 +44,8 @@ class OctopushClient extends OctopushApiClient
      */
     public function send($message = null)
     {
-        $smsText = isset($message) ? $message : $this->smsText;
+        $smsText = $message ? $message : $this->smsText;
 
-        return parent::send($message);
+        return parent::send($smsText);
     }
 }
